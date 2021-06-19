@@ -4,7 +4,7 @@ body{
 	padding: 50px;
 }
 h1{
-	color: yellow;
+	color: white;
 	text-align: center;
 	font-size: 50px;
 }
@@ -26,6 +26,7 @@ div.parent {
 	font-size: 50px
 
 }
+
 ol{
 	text-align: left;
 	display: inline-block;
@@ -33,3 +34,16 @@ ol{
 	color: #333;
 	padding: 50px;
 }
+.animacion {
+
+  position: relative;
+  animation-name: animacion;
+  animation-duration: 4s;
+}
+
+@keyframes animacion {
+  0%   {color:red; left:0px; top:0px;}
+  25%  {color:yellow; left:200px; top:0px;}
+  50%  {color:blue; left:200px; top:200px;}
+  75%  {color:green; left:0px; top:200px;}
+  100% {color:red; left:0px; top:0px;}
